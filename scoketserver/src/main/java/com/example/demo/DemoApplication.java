@@ -42,7 +42,7 @@ public class DemoApplication {
 		            //create ObjectOutputStream object
 		            ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 		            //write object to Socket
-		            oos.writeObject("Hi Client "+message);
+		            oos.writeObject("success");
 		            //close resources
 		            ois.close();
 		            oos.close();
