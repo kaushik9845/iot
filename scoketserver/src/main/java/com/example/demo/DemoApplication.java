@@ -23,7 +23,7 @@ public class DemoApplication {
 	
 		  private static ServerSocket server;
 		    //socket server port on which it will listen
-		    private static int port = 9876;
+		    private static int port = 6789;
 		    
 		    
 		    public static void main(String args[]) throws IOException, ClassNotFoundException{
@@ -51,7 +51,7 @@ public class DemoApplication {
 		            
 		            
 		            CloseableHttpClient httpclient = HttpClients.createDefault();
-		            HttpPost httpPost = new HttpPost("http://localhost:8080/rest/hello");
+		            HttpPost httpPost = new HttpPost("http://localhost:8080/view/rest/hello");
 		            String JSON_STRING="";
 		            HttpEntity stringEntity = new StringEntity(message,ContentType.DEFAULT_TEXT);
 		            httpPost.setEntity(stringEntity);
