@@ -42,7 +42,7 @@ public class AsyncClass {
             //create ObjectOutputStream object
             ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
             //write object to Socket
-            oos.writeObject("success");
+            oos.writeObject("Success");
             //close resources
             ois.close();
             oos.close();
